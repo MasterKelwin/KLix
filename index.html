@@ -7,9 +7,23 @@
     <title>KLix | Sua plataforma de Filmes</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+    <header class="cabecalho">
+        <h1 class="cabecalho__titulo">KLix</h1>
+        <h2 class="cabecalho__subtitulo">Sua lista de games!</h2>
+        <a href="https://www.linkedin.com/in/kelwin-hollunder/" rel="external" target="_blank" class="cabecalho__link">Kelwin Hollunder</a>
+    </header>
+    <main>
+        <section>
+            <input type="text" class="campoAdicionar adicionar" id="adicionarJogo">
+            <button type="submit" class="botao adicionar" id="buttonAdd" onclick="adicionarViaIndex()">Adicionar</button>
+            <p id="alerta"></p>
+        </section>
+        <div id="conteudo">
+        </div>
+    </main>
 </body>
 <script src="js/main.js"></script>
 </html>
